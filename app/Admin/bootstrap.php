@@ -18,4 +18,27 @@
  *
  */
 
-Encore\Admin\Form::forget(['map', 'editor']);
+use Encore\Admin\Form;
+use Encore\Admin\Grid;
+
+Form::forget(['map']);
+
+Form::init(function (Form $form) {
+
+    $form->disableEditingCheck();
+
+    $form->disableCreatingCheck();
+
+    $form->disableViewCheck();
+
+});
+
+Grid::init(function (Grid $grid) {
+
+    $grid->disableFilter();
+
+    $grid->disableColumnSelector();
+
+    $grid->disableExport();
+
+});
