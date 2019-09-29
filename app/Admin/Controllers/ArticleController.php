@@ -20,7 +20,7 @@ class ArticleController extends AdminController
      *
      * @var string
      */
-    protected $title = 'App\Article';
+    protected $title = '文章';
 
     /**
      * Make a grid builder.
